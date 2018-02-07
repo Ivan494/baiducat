@@ -1,4 +1,5 @@
 ﻿// 接收popup.js的消息
+
 chrome.extension.onMessage.addListener(
 	function (request, sender, sendResponse) {
 		if (request.cmd == "run") {
@@ -10,19 +11,21 @@ $(document).ready(function () {
 	console.log('?');
 	//$('.detail').change(function(){
 
-	$('.button:visible').trigger('click');
+	//$('.button:visible').trigger('click');
 	/* 	console.log($(".sms-img img").attr('src'));
 		$(".sms-img img").change(function (e) {
 			console.log($(".sms-img img").attr('src'));
 		}); */
-	setInterval(scanCode, 3000);
+	//setInterval(scanCode, 3000);
 	//});
 });
 
 function scanCode() {
 	console.log($(".sms-img img").attr('src'));
+	$(".sms-img img").attr('id', 'captcha');
+	CBL.solve('captcha');
+CBL('solve',)
 }
-
 function run() {
 	var defaultDegreeConf = [{
 		desc: '普通',

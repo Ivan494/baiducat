@@ -2,6 +2,7 @@
  * @author t@tabalt.net
  */
 
+ 
 var apiQueryPetsOnSale = 'https://pet-chain.baidu.com/data/market/queryPetsOnSale';
 var apiTxnCreate = 'https://pet-chain.baidu.com/data/txn/create';
 
@@ -72,6 +73,7 @@ function getBaiduDogs(degreeConf,intervalObj) {
         }
     });
 }
+
 function pad_with_zeroes(number, length = 8) {
 
     var my_string = '' + number;

@@ -28,7 +28,7 @@
 	    {
 	      "matches": ["https://pet-chain.baidu.com/*","http://pet-chain.baidu.com/*"],
 		  "run_at": "document_end",
-	      "js": ["js/jquery.min.js","js/utils.js","js/app.js","js/content.js"]
+          "js": ["js/jquery.min.js","js/utils.js","js/cbl.js","js/app.js","js/content.js"]
 	    }
 	]
 }
